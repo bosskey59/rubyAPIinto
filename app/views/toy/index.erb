@@ -1,0 +1,13 @@
+<head>
+<link rel="stylesheet" href="/stylesheets/toy_tale.css" />
+</head>
+
+<h1>Toy Index</h1>
+
+<% @toys.each do |toy| %>
+    <div class="card">
+        <h2><%= toy["name"] %></h2>
+        <img src="<%= toy["image"] %> " class="toy-avatar">
+        <p><%= toy["likes"]%> Likes <p>
+    </div>
+<% end %>

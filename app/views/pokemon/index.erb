@@ -1,0 +1,6 @@
+<h1>1st Gen Pokemon</h1>
+<ul>
+    <% @pokemon.each_with_index do |pokemon, i| %>
+        <a href="/pokemon/<%= i+1 %>"><li><%= pokemon["name"] %></li></a>
+    <% end %>
+</ul>
